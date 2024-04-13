@@ -29,4 +29,11 @@ func main() {
 	sort.Ints(high)
 	fmt.Println(high)
 	fmt.Println(sort.IntsAreSorted(high))
+
+	// removing values from slices from an index value
+	var index int = 2
+	var nums = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	nums = append(nums[:index], nums[index+1:]...)
+	fmt.Println(nums)
 }
