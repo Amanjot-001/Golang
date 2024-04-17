@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-const url = "https://lco.dev"
+const url = "https://httpbin.org/get"
 
 func main() {
 	res, err := http.Get(url)
